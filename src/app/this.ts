@@ -30,21 +30,13 @@ Judy.say();
 
 
 
-// function func(param1) {
-//   console.log('func', this);
-//   Object.keys(this).forEach(key => {
-//     console.log(key);
-//     console.log(this[key]);
-//   });
+// function funcA(param1, param2) {
+//   console.log(this, param1, param2);
 // }
-
-// const objA = {
-//   methodA() {
-//     console.log('objA methodA', this);
-//   }
-// };
 
 // const objB = { a: 1, b: 2 };
 
-// func.call(objB);
-// objA.methodA.call(objB);
+// const funcB = funcA.bind(objB, objB.a);
+
+// funcB();
+// funcB(objB.b);
