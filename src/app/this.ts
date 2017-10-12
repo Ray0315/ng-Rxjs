@@ -4,8 +4,6 @@ function animal(name, food) {
   this.say = () => {
     console.log(name + ' likes ' + this.food + '.');
   };
-
-
 }
 
 function rabbit(name, food) {

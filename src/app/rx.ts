@@ -55,7 +55,7 @@ Observable.merge(a, b).
 // concat - a 先做完再做 b。
 a.concat(b).subscribe(x => console.log(x));
 
-// forkJoin
+// forkJoin - 取最後一個
 Observable.forkJoin(a, b).
   subscribe(x => console.log(x));
 
